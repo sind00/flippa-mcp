@@ -331,6 +331,6 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**Flippa has the listings. LLMs have the brains. This connects them.**
+**Flippa has the listings. <-- MCP --> LLMs have the brains.
 
 </div>
