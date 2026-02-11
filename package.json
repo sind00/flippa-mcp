@@ -1,0 +1,49 @@
+{
+  "name": "flippa-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for searching, analyzing, and evaluating Flippa.com marketplace listings",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "flippa-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "flippa",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "marketplace",
+    "valuation",
+    "online-business"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sind00/flippa-mcp.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.7.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
