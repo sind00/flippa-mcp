@@ -1,6 +1,6 @@
 {
   "name": "flippa-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server for searching, analyzing, and evaluating Flippa.com marketplace listings",
   "type": "module",
   "main": "dist/index.js",
@@ -38,6 +38,7 @@
     "type": "github",
     "url": "https://github.com/sponsors/sind00"
   },
+  "mcpName": "io.github.sind00/flippa-mcp",
   "license": "MIT",
   "engines": {
     "node": ">=18"

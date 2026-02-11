@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.sind00/flippa-mcp",
+  "description": "Search, analyze, and evaluate online businesses for sale on Flippa.com marketplace.",
+  "repository": {
+    "url": "https://github.com/sind00/flippa-mcp",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "flippa-mcp-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Optional bearer token for future authenticated Flippa API endpoints (watchlist, bidding). Not required for core functionality.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true,
+          "name": "FLIPPA_API_TOKEN"
+        }
+      ]
+    }
+  ]
+}
