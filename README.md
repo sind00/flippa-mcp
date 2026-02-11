@@ -1,6 +1,6 @@
 <div align="center">
 
-# FLIPPA MCP
+# Flippa.com Listings MCP
 
 **Search, analyze, and evaluate online businesses on Flippa — powered by AI.**
 
@@ -331,6 +331,6 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**Flippa has the listings. Claude has the brains. This connects them.**
+**Flippa has the listings. LLMs have the brains. This connects them.**
 
 </div>
