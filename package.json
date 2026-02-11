@@ -1,6 +1,6 @@
 {
   "name": "flippa-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for searching, analyzing, and evaluating Flippa.com marketplace listings",
   "type": "module",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-"clean": "rm -rf dist",
+    "clean": "rm -rf dist",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -33,6 +33,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sind00/flippa-mcp.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sind00"
   },
   "license": "MIT",
   "engines": {

@@ -10,6 +10,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/flippa-mcp-server?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/flippa-mcp-server)
 [![GitHub stars](https://img.shields.io/github/stars/sind00/flippa-mcp?style=for-the-badge&logo=github&color=181717)](https://github.com/sind00/flippa-mcp)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+[![Sponsor](https://img.shields.io/badge/sponsor-♥-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/sind00)
 
 <br>
 
@@ -323,6 +324,14 @@ src/
 
 ---
 
+## Support This Project
+
+If Flippa MCP helps you find great deals, consider sponsoring to keep development going:
+
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor_on_GitHub-♥-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/sind00)
+
+---
+
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
@@ -331,6 +340,6 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-**Flippa has the listings. <-- MCP --> LLMs have the brains.
+**Flippa has the listings. <-- MCP --> LLMs have the brains.**
 
 </div>
