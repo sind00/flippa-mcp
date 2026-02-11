@@ -10,34 +10,7 @@ import type {
   NumericStats,
   ResponseFormat,
 } from "../types.js";
-
-/** Compute median of a numeric array */
-function median(values: number[]): number {
-  if (values.length === 0) return 0;
-  const sorted = [...values].sort((a, b) => a - b);
-  const mid = Math.floor(sorted.length / 2);
-  if (sorted.length % 2 === 0) {
-    return (sorted[mid - 1]! + sorted[mid]!) / 2;
-  }
-  return sorted[mid]!;
-}
-
-/** Compute average of a numeric array */
-function average(values: number[]): number {
-  if (values.length === 0) return 0;
-  return values.reduce((sum, v) => sum + v, 0) / values.length;
-}
-
-/** Compute numeric stats from an array of values */
-function computeStats(values: number[]): NumericStats | null {
-  if (values.length === 0) return null;
-  return {
-    min: Math.min(...values),
-    max: Math.max(...values),
-    avg: Math.round(average(values) * 100) / 100,
-    median: Math.round(median(values) * 100) / 100,
-  };
-}
+import { median, average, computeStats } from "../utils/math.js";
 
 export function registerMarketTool(server: McpServer): void {
   server.registerTool(
@@ -94,9 +67,9 @@ Examples:
           typeBreakdown.push({
             type: parsed.property_type,
             count: totalListings,
-            avg_price: prices.length > 0 ? Math.round(average(prices)) : null,
+            avg_price: prices.length > 0 ? Math.round(average(prices) as number) : null,
             avg_revenue:
-              revenues.length > 0 ? Math.round(average(revenues)) : null,
+              revenues.length > 0 ? Math.round(average(revenues) as number) : null,
           });
         } else {
           // Query across all major property types
@@ -126,9 +99,9 @@ Examples:
               type,
               count: response.meta.total_results,
               avg_price:
-                prices.length > 0 ? Math.round(average(prices)) : null,
+                prices.length > 0 ? Math.round(average(prices) as number) : null,
               avg_revenue:
-                revenues.length > 0 ? Math.round(average(revenues)) : null,
+                revenues.length > 0 ? Math.round(average(revenues) as number) : null,
             });
           }
         }
@@ -168,7 +141,7 @@ Examples:
           profit_stats: computeStats(allProfits),
           avg_revenue_multiple:
             revenueMultiples.length > 0
-              ? Math.round(average(revenueMultiples) * 100) / 100
+              ? Math.round((average(revenueMultiples) as number) * 100) / 100
               : null,
           verified_percentage:
             allListings.length > 0

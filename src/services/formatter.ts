@@ -10,7 +10,7 @@ import type {
 } from "../types.js";
 
 /** Truncate a string to the character limit with a message */
-function truncate(text: string): string {
+export function truncate(text: string): string {
   if (text.length <= CHARACTER_LIMIT) {
     return text;
   }
@@ -19,13 +19,13 @@ function truncate(text: string): string {
 }
 
 /** Format a dollar amount */
-function formatUsd(value: number | null): string {
+export function formatUsd(value: number | null): string {
   if (value === null || value === undefined) return "N/A";
   return `$${value.toLocaleString("en-US")}`;
 }
 
 /** Format a number with commas */
-function formatNumber(value: number | null): string {
+export function formatNumber(value: number | null): string {
   if (value === null || value === undefined) return "N/A";
   return value.toLocaleString("en-US");
 }

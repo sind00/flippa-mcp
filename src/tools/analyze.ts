@@ -5,7 +5,7 @@ import { formatAnalysis } from "../services/formatter.js";
 import type { ListingAnalysis, FlippaListing, ResponseFormat } from "../types.js";
 
 /** Compute valuation analysis from a listing */
-function analyzeListing(listing: FlippaListing): ListingAnalysis {
+export function analyzeListing(listing: FlippaListing): ListingAnalysis {
   const askingPrice = listing.current_price;
   const monthlyRevenue = listing.revenue_per_month;
   const monthlyProfit = listing.profit_per_month;

@@ -7,23 +7,7 @@ import type {
   ComparableSalesResult,
   ResponseFormat,
 } from "../types.js";
-
-/** Compute median of a numeric array */
-function median(values: number[]): number | null {
-  if (values.length === 0) return null;
-  const sorted = [...values].sort((a, b) => a - b);
-  const mid = Math.floor(sorted.length / 2);
-  if (sorted.length % 2 === 0) {
-    return (sorted[mid - 1]! + sorted[mid]!) / 2;
-  }
-  return sorted[mid]!;
-}
-
-/** Compute average of a numeric array */
-function average(values: number[]): number | null {
-  if (values.length === 0) return null;
-  return values.reduce((sum, v) => sum + v, 0) / values.length;
-}
+import { median, average } from "../utils/math.js";
 
 export function registerCompareTool(server: McpServer): void {
   server.registerTool(
